@@ -1,0 +1,14 @@
+#stats
+  #user(data-id=user._id.toString()) User: #{user.username}
+  #wood Wood: #{user.wood.toFixed(1)}
+  #cash Cash: $#{user.cash.toFixed(2)}
+  .button#plant Plant Seed
+  .button#getforest Get Forest
+  .button#sell-wood Sell Wood
+  input#wood-amt(type='text', placeholder='Wood Amt')
+  if(user.isAutoGrowAvailable)
+    .button#autogrow Autogrow
+  if(user.isAutoSeedAvailable)
+    .button#autoseed Autoseed
+  if(user.isAutoRootAvailable)
+    .button#autoroot Autoroot
